@@ -10,7 +10,7 @@ title: Home
 {% for card in site.cards %}
   <a href="{{ card.url | relative_url }}" class="card">
     {% if card.image %}
-      <img src="{{ card.image }}" alt="{{ card.title }}">
+          <img src="{{ card.image | relative_url }}" alt="{{ card.title }}">
     {% endif %}
     <h3>{{ card.title }}</h3>
     <p>{{ card.description }}</p>
