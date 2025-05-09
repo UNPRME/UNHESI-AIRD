@@ -1,0 +1,19 @@
+---
+layout: default
+title: Home
+---
+
+<h1>Welcome</h1>
+<p>This scaffold demonstrates a shared design system and Jekyll template inheritance on GitHub Pages.</p>
+
+<div class="card-grid">
+{% for card in site.cards %}
+  <a href="{{ card.url | relative_url }}" class="card">
+    {% if card.image %}
+      <img src="{{ card.image }}" alt="{{ card.title }}">
+    {% endif %}
+    <h3>{{ card.title }}</h3>
+    <p>{{ card.description }}</p>
+  </a>
+{% endfor %}
+</div> 

@@ -1,0 +1,20 @@
+title: "UNHESI-AIRD Working Repository"
+description: "A GitHub Pages site scaffold showcasing template inheritance and a shared design system."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: ""       # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Collections allow us to create custom content types – here we use one for the cards displayed on the home page.
+collections:
+  cards:
+    output: true          # each item gets its own page
+    permalink: /cards/:path/
+
+# Exclude default files that aren't needed on the live site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules 
