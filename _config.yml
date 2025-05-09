@@ -17,4 +17,5 @@ collections:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules 
+  - node_modules
+  - vendor/ 
